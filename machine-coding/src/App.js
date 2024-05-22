@@ -1,23 +1,18 @@
-import logo from './logo.svg';
-import './App.css';
+import Accordian from "./Accordian/Accordian";
+import "./App.css";
+import FlderStructure from "./FolderStructure/FlderStructure";
+// import Clock from './Counter/Clock';
+import InfiniteScroll from "./InfiniteScroll/InfiniteScroll";
+import RedditComments from "./RedditComments/RedditComments";
+// import Counter from './Counter/Counter';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      {/* <InfiniteScroll/> */}
+      {/* <Accordian/> */}
+      {/* <RedditComments/> */}
+      <FlderStructure />
     </div>
   );
 }
