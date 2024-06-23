@@ -12,8 +12,6 @@ import React from 'react'
 // Folder structure
 
 
-
-
 // Nested comments
 // Multi language support
 // Contact form with validation
@@ -22,6 +20,13 @@ import React from 'react'
 // Traffic light
 // Progress bar
 // DropDown menu
+
+
+
+// Common modal for everyone - usercan pass header, footer and content
+// dark and light mode
+// Custom hook using userIntersection observer
+// rating giver.
 
 
 

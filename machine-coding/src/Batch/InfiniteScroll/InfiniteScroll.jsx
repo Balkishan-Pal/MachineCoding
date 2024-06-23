@@ -27,17 +27,24 @@ const farziData = [
 
 function InfiniteScroll() {
   const ref = useRef();
-  const [data, setData] = useState(farziData);
+  const [data, setData] = useState([]);
   const [loading, setloading] = useState(false);
 
   const handleScroll = () => {
     let scrollContainer = ref.current;
 
-    // horizonatl and vertical 
+    // horizonatl and vertical
 
-    let { clientHeight, scrollTop, scrollHeight,scrollLeft,scrollWidth,clientWidth } = scrollContainer;
+    let {
+      clientHeight,
+      scrollTop,
+      scrollHeight,
+      scrollLeft,
+      scrollWidth,
+      clientWidth,
+    } = scrollContainer;
 
-    let endHeightReached = Math.ceil(clientWidth + scrollLeft) >= scrollWidth;
+    let endHeightReached = Math.ceil(clientHeight + scrollTop) >= scrollHeight;
     setloading(true);
     if (endHeightReached) {
       setTimeout(() => {
@@ -53,16 +60,22 @@ function InfiniteScroll() {
     return () => scrollContainer.removeEventListener("scroll", handleScroll);
   }, []);
 
+  useEffect(() => {
+    setTimeout(() => {
+      setData((prev) => [...prev, ...farziData]);
+    }, 2000);
+  }, []);
+
   return (
     <div
       style={{
-        // height: "100vh", // for vertical
-        // flexDirection:'column' // vertical
-        // overflowY:'auto' // vertical 
+        height: "100vh", // for vertical
+        flexDirection: "column", // vertical
+        overflowY: "auto", // vertical
         display: "flex",
         gap: "20px",
-        overflowX: "auto",
-        width:'100vw'
+        // overflowX: "auto",
+        // width:'100vw'
       }}
       ref={ref}
     >
