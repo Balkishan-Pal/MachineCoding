@@ -34,7 +34,7 @@ function FstructureChild(props) {
 
         return items?.map((item)=>{
           if(item.isFolder && item.id === id){
-            return {
+            return { 
               ...item,
               items: [...item.items,newItem]
             }

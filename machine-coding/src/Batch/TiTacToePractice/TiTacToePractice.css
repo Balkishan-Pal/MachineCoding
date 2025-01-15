@@ -1,0 +1,14 @@
+
+
+
+.parent-grid{
+    display: grid;
+    border: 1px solid grey;
+
+}
+
+.box{
+    height: 50px;
+    width: 50px;
+
+}

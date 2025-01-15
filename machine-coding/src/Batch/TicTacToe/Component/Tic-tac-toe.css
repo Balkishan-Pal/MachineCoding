@@ -1,0 +1,15 @@
+.boxes {
+  height: 50px;
+  width: 50px;
+  background-color: rgb(187, 185, 185);
+  display: flex;
+  align-items: center;
+  font-size: 20px;
+}
+
+.area {
+  width: calc(3 * 50px);
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}

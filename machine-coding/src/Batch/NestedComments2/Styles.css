@@ -1,0 +1,14 @@
+.COMMENT{
+    background: red;
+    padding: 10px;
+    display: inline-block;
+
+}
+
+
+
+.noraml-button{
+    color: black;
+    font-weight: 700;
+    cursor: pointer;
+}
