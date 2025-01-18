@@ -4,11 +4,14 @@ import AutoCompleteSearch from "./Batch/AutoCompleteSearchBar/AutoCompleteSearch
 import AutoCompleteSearchBar from "./Batch/AutoCompleteSearchBar/AutoCompleteSearchBar";
 import FolderParent from "./Batch/FolderStructure/FolderParent";
 import ImageSlider from "./Batch/ImageSlider/ImageSlider";
+import InfiniteScrollPRactice from "./Batch/InfiniteScroll/InfiniteScrollPRactice.jsx";
 import MMT from "./Batch/MMT/MMT";
 import MMTPractice from "./Batch/MMT/MMTPractice.jsx";
+import CommentsStructure from "./Batch/NestedComent/Components/CommentsStructure.jsx";
 import CommentStructure from "./Batch/NestedComments2/CommentStructure";
 import OTPlogin from "./Batch/OTPLogin/OTPlogin";
 import OtpLoginPractice from "./Batch/OtpLoginPractice/OtpLoginPractice.jsx";
+import Parent from "./Batch/PracticeOriginalComm/Parent.jsx";
 // import NestedComment from "./Batch/NestedComent/NestedComment";
 import Stopwatch from "./Batch/StopWatch/StopWatch";
 import TiTacToePractice from "./Batch/TiTacToePractice/TiTacToePractice.jsx";
@@ -42,7 +45,7 @@ function App() {
       {/* <AutoCompleteSearchBar/> */}
       {/* <Stopwatch/> */}
       {/* <FolderParent/> */}
-      {/* <NestedComment /> */}
+      {/* <CommentsStructure /> */}
       {/* <MMT/> */}
       {/* <AutoCompleteSearch/> */}
       {/* <CommentStructure/> */}
@@ -52,7 +55,10 @@ function App() {
       {/* <TiTacToePractice/> */}
       {/* <OtpLoginPractice/> */}
       {/* <OTPlogin/> */}
-      <MMTPractice />
+      {/* <MMTPractice /> */}
+      {/* <InfiniteScrollPRactice/> */}
+      {/* <Parent/> */}
+      <Parent/>
     </div>
   );
 }
