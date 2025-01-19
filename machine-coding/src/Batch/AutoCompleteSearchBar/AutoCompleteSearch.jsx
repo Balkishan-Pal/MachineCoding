@@ -3,6 +3,7 @@ import React, { useEffect, useState } from "react";
 function AutoCompleteSearch() {
   const [input, setInput] = useState("");
   const [data, setData] = useState([]);
+  
   const handleChange = (e) => {
     const { value } = e.target;
     setInput(value);

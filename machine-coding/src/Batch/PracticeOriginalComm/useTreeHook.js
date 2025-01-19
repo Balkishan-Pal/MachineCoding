@@ -37,7 +37,7 @@ export const useTreeHook = (comments) => {
   };
 
   const editComp = (tree, id, content) => {
-   return tree.map((rep) => {
+    return tree.map((rep) => {
       if (rep.id === id) {
         return {
           ...rep,
@@ -53,7 +53,6 @@ export const useTreeHook = (comments) => {
     });
   };
   const editNode = (commentID, content) => {
-    console.log(commentID,content)
     setCommentData((prev) => editComp(prev, commentID, content));
   };
   const deleteNode = () => {
