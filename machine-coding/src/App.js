@@ -12,11 +12,13 @@ import CommentStructure from "./Batch/NestedComments2/CommentStructure";
 import OTPlogin from "./Batch/OTPLogin/OTPlogin";
 import OtpLoginPractice from "./Batch/OtpLoginPractice/OtpLoginPractice.jsx";
 import Parent from "./Batch/PracticeOriginalComm/Parent.jsx";
+import StarRating from "./Batch/StarRating/StarRating.jsx";
 // import NestedComment from "./Batch/NestedComent/NestedComment";
 import Stopwatch from "./Batch/StopWatch/StopWatch";
 import TiTacToePractice from "./Batch/TiTacToePractice/TiTacToePractice.jsx";
 import Tictactoe from "./Batch/TicTacToe/Component/Tic-tac-toe";
 import TictactoeDyanamic from "./Batch/TicTacToeDynamic/TicTacToeDyanamic";
+import TrafficLight from "./Batch/TrafficLight/TrafficLight.jsx";
 // import Accordian from "./Batch/Accordian/Accordian";
 // import Counter from "./Batch/Counter/Counter";
 // import InfiniteScroll from "./Batch/InfiniteScroll/InfiniteScroll";
@@ -58,7 +60,12 @@ function App() {
       {/* <MMTPractice /> */}
       {/* <InfiniteScrollPRactice/> */}
       {/* <Parent/> */}
-      <Parent/>
+      {/* <Parent/> */}
+      {/* <StopWatchPractive/> */}
+      {/* <AutoCompleteSearchPractive/> */}
+      {/* <AutoCompleteSearchBar/> */}
+      {/* <TrafficLight/> */}
+      <StarRating/>
     </div>
   );
 }

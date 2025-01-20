@@ -26,7 +26,7 @@ function Stopwatch() {
   };
 
   const formatTime = (time) => {
-    const getMilliseconds = `0${(time % 1000) / 10}`.slice(-2);
+    const getMilliseconds = `0${Math.floor(time % 1000) / 10}`.slice(-2);
     const seconds = Math.floor((time / 1000) % 60);
     const getSeconds = `0${seconds}`.slice(-2);
     const minutes = Math.floor((time / 60000) % 60);
